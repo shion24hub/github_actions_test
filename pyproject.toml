@@ -1,0 +1,22 @@
+[project]
+name = "github-actions-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "polars>=1.38.1",
+]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.5.1",
+]
+
+[tool.black]
+line-length = 90
+
+[tool.isort]
+profile = "black"
+line_length = 90
+multi_line_output = 3
